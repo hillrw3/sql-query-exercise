@@ -1,0 +1,19 @@
+exercisedb=# select customers.name, round(avg(amount),2), customers.id
+from orders
+join customers
+on orders.customer_id=customers.id
+group by customers.name, customers.id
+order by name asc;
+         name         | round | id
+----------------------+-------+----
+ Coleman Prohaska Jr. | 57.94 |  8
+ Donato Rempel        | 31.21 |  1
+ Edna Hintz           | 65.50 |  7
+ Elta Dicki           | 62.72 |  5
+ Evert Pfeffer        | 41.06 |  4
+ Hulda Will III       | 44.79 | 10
+ Ms. Sofia Rowe       | 77.51 |  3
+ Tyrell Von DDS       |  3.55 |  2
+ Wilhelmine Huels     | 22.39 |  9
+ Zelma Davis          | 44.81 |  6
+(10 rows)

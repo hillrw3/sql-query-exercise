@@ -1,0 +1,19 @@
+exercisedb=# select customers.name, avg(amount), customers.id
+from orders
+join customers
+on orders.customer_id=customers.id
+group by customers.name, customers.id
+order by name asc;
+         name         |         avg         | id
+----------------------+---------------------+----
+ Coleman Prohaska Jr. | 57.9350000000000000 |  8
+ Donato Rempel        | 31.2140000000000000 |  1
+ Edna Hintz           | 65.5033333333333333 |  7
+ Elta Dicki           | 62.7233333333333333 |  5
+ Evert Pfeffer        | 41.0600000000000000 |  4
+ Hulda Will III       | 44.7928571428571429 | 10
+ Ms. Sofia Rowe       | 77.5060000000000000 |  3
+ Tyrell Von DDS       |  3.5450000000000000 |  2
+ Wilhelmine Huels     | 22.3900000000000000 |  9
+ Zelma Davis          | 44.8116666666666667 |  6
+(10 rows)

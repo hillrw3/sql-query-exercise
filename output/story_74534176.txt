@@ -1,0 +1,3 @@
+get customer_id(orders) to relate to order_id(orderitems)
+order_id to relate to item_id
+relate item_id to name(items)
