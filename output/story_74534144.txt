@@ -1,0 +1,6 @@
+exercisedb=# select round(avg(amount),2) from orders;
+ round
+-------
+ 49.33
+(1 row)
+
