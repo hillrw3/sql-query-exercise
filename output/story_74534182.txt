@@ -1,0 +1,9 @@
+exercisedb=# exercisedb=# select sum(amount) from orders
+join customers on orders.customer_id = customers.id
+join orderitems on orders.id = orderitems.order_id
+join items on orderitems.item_id = items.id
+where customers.name='Evert Pfeffer' and items.name='bike03';
+  sum   
+--------
+ 198.47
+(1 row)

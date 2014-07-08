@@ -16,4 +16,4 @@ order by name asc;
  Tyrell Von DDS       |  3.5450000000000000 |  2
  Wilhelmine Huels     | 22.3900000000000000 |  9
  Zelma Davis          | 44.8116666666666667 |  6
-(10 rows)
+(1

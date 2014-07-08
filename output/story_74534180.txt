@@ -1,0 +1,25 @@
+exercisedb=# select customers.name from customers
+join orders on customers.id = orders.customer_id
+join orderitems on orders.id = orderitems.order_id
+join items on orderitems.item_id = items.id
+where items.id = 6;
+         name
+----------------------
+ Evert Pfeffer
+ Elta Dicki
+ Coleman Prohaska Jr.
+ Elta Dicki
+ Tyrell Von DDS
+ Evert Pfeffer
+ Edna Hintz
+ Hulda Will III
+ Wilhelmine Huels
+ Evert Pfeffer
+ Evert Pfeffer
+ Elta Dicki
+ Donato Rempel
+ Ms. Sofia Rowe
+ Coleman Prohaska Jr.
+ Hulda Will III
+ Ms. Sofia Rowe
+(17 rows)

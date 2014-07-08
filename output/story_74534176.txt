@@ -1,3 +1,15 @@
-get customer_id(orders) to relate to order_id(orderitems)
-order_id to relate to item_id
-relate item_id to name(items)
+exercisedb=# select items.name from items
+exercisedb-# join orderitems on items.id = orderitems.item_id
+exercisedb-# join orders on orderitems.order_id = orders.id
+exercisedb-# where orders.customer_id = 2;
+  name  
+--------
+ boot01
+ bike03
+ ski01
+ bike01
+ bike02
+ boot03
+ ski02
+ boot01
+(8 rows)

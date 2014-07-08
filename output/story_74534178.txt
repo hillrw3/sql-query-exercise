@@ -1,0 +1,26 @@
+exercisedb=# select orders.customer_id from orders
+join orderitems on orders.id = orderitems.order_id
+join items on orderitems.item_id = items.id
+where items.id = 8;
+ customer_id
+-------------
+           5
+           7
+           4
+           3
+           1
+           6
+           3
+          10
+           7
+          10
+           4
+           3
+           5
+           4
+           5
+           8
+           8
+           5
+(18 rows)
+
